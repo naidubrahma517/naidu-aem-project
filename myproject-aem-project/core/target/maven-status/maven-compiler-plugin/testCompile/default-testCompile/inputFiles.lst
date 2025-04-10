@@ -1,6 +1,6 @@
-D:\Naidu\myproject-aem-project\core\src\test\java\com\myproject\aem\core\filters\LoggingFilterTest.java
-D:\Naidu\myproject-aem-project\core\src\test\java\com\myproject\aem\core\models\HelloWorldModelTest.java
-D:\Naidu\myproject-aem-project\core\src\test\java\com\myproject\aem\core\listeners\SimpleResourceListenerTest.java
-D:\Naidu\myproject-aem-project\core\src\test\java\com\myproject\aem\core\schedulers\SimpleScheduledTaskTest.java
-D:\Naidu\myproject-aem-project\core\src\test\java\com\myproject\aem\core\servlets\SimpleServletTest.java
-D:\Naidu\myproject-aem-project\core\src\test\java\com\myproject\aem\core\testcontext\AppAemContext.java
+D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\test\java\com\myproject\aem\core\testcontext\AppAemContext.java
+D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\test\java\com\myproject\aem\core\listeners\SimpleResourceListenerTest.java
+D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\test\java\com\myproject\aem\core\servlets\SimpleServletTest.java
+D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\test\java\com\myproject\aem\core\filters\LoggingFilterTest.java
+D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\test\java\com\myproject\aem\core\schedulers\SimpleScheduledTaskTest.java
+D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\test\java\com\myproject\aem\core\models\HelloWorldModelTest.java

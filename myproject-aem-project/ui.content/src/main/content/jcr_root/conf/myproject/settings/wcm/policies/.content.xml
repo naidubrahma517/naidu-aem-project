@@ -2,6 +2,23 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <policy_1744280862964
+                        jcr:lastModified="{Date}2025-04-10T15:58:03.688+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,group:My Project - Content]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1744280862964>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
     <rep:policy/>
     <myproject jcr:primaryType="nt:unstructured">
         <components jcr:primaryType="nt:unstructured">
@@ -34,9 +51,9 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
@@ -303,6 +320,16 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_101481867425700
+                    jcr:lastModified="{Date}2025-04-10T16:01:34.646+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="group:My Project - Content"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_101481867425700>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650

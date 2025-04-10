@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2025-04-10T15:59:36.651+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/myproject/settings/wcm/templates/landing-page-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="myproject/components/etPage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <title
+                jcr:created="{Date}2025-04-10T15:58:47.922+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-04-10T15:59:29.223+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Header"
+                sling:resourceType="myproject/components/title"/>
+            <container
+                jcr:created="{Date}2025-04-10T15:59:03.460+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-04-10T15:59:03.460+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/container"
+                editable="{Boolean}true"/>
+            <title_1661960791
+                jcr:created="{Date}2025-04-10T15:59:17.794+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-04-10T15:59:36.645+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Footer"
+                sling:resourceType="myproject/components/title"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}650"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>
