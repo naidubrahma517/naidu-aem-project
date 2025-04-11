@@ -1,0 +1,15 @@
+<sly data-sly-test="${wcmmode.edit}">
+	<div class="cq-placeholder" data-emptyText=" please configure Employee List component"></div>
+</sly>
+
+<sly data-sly-use.model="com.myproject.aem.core.models.EmployeeList">
+	<div class="companyName" >
+	${model.companyName}
+	<sly data-sly-list.empList="${model.multifield}">
+		<div class="empList" >
+		========== "${empList.count}" ==========
+			${empList.rollNumber} -- ${empList.name} -- ${empList.age}
+		</div>
+	</sly>	
+	</div>
+</sly>

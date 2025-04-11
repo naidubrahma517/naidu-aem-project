@@ -24,6 +24,7 @@ Import-Package: javax.annotation;version="0.0.0",com.day.cq.wcm.api;ve
  ache.sling.api.servlets;version="[2.2,3)",org.apache.sling.models.ann
  otations;version="[1.5,2)",org.apache.sling.models.annotations.inject
  orspecific;version="[1.1,2)",org.slf4j;version="[1.7,2)"
+Private-Package: com.myproject.aem.core.models.bean
 Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
  unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
  ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
@@ -37,6 +38,7 @@ Service-Component: OSGI-INF/com.myproject.aem.core.filters.LoggingFilt
  er.xml,OSGI-INF/com.myproject.aem.core.listeners.SimpleResourceListen
  er.xml,OSGI-INF/com.myproject.aem.core.schedulers.SimpleScheduledTask
  .xml,OSGI-INF/com.myproject.aem.core.servlets.SimpleServlet.xml
-Sling-Model-Classes: com.myproject.aem.core.models.HelloWorldModel,com
- .myproject.aem.core.models.TitleModel
+Sling-Model-Classes: com.myproject.aem.core.models.EmployeeList,com.my
+ project.aem.core.models.HelloWorldModel,com.myproject.aem.core.models
+ .TitleModel,com.myproject.aem.core.models.bean.Multifield
 

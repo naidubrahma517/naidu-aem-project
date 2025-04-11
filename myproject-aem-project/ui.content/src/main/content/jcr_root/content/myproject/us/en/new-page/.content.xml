@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2025-04-11T15:41:57.209+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/myproject/settings/wcm/templates/landing-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="new page"
+        sling:resourceType="myproject/components/etPage">
+        <root jcr:primaryType="nt:unstructured">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/container">
+                <tt
+                    jcr:created="{Date}2025-04-10T16:10:51.331+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-10T16:11:11.858+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/tt"
+                    label="tt text authored"/>
+                <title
+                    jcr:created="{Date}2025-04-10T21:14:48.757+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-11T14:10:48.522+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/myComponents/title"
+                    checkbox="true"
+                    number="1"
+                    title="NEW COMPONENT TITLE"/>
+                <employeelist
+                    jcr:created="{Date}2025-04-11T14:11:11.990+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-11T15:38:56.119+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/myComponents/employeeList"
+                    companyName="LTIMindtree">
+                    <multifield jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            age="29"
+                            name="Naidu"
+                            rollNumber="1"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            age="3"
+                            name="Arshi"
+                            rollNumber="2"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            age="6"
+                            name="Thulasi"
+                            rollNumber="3"/>
+                    </multifield>
+                </employeelist>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
