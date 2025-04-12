@@ -72,8 +72,13 @@ out.write("\n\t<div class=\"companyName\">");
                                     if (var_traversal11) {
                                         out.write("\n\t\t<div class=\"empList\">");
                                         {
-                                            String var_12 = (((((((("\n\t\t========== \"" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "count"), "text"))) + "\" ==========\n\t\t\t") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "rollNumber"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "name"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "age"), "text"))) + "\n\t\t");
+                                            String var_12 = (("\n\t\t========== \"" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "count"), "text"))) + "\" ==========");
                                             out.write(renderContext.getObjectModel().toString(var_12));
+                                        }
+                                        out.write("</br>");
+                                        {
+                                            String var_13 = (((((("\n\t\t\t" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "rollNumber"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "name"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "age"), "text"))) + "\n\t\t");
+                                            out.write(renderContext.getObjectModel().toString(var_13));
                                         }
                                         out.write("</div>\n\t");
                                     }

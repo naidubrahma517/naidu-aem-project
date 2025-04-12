@@ -1,6 +1,7 @@
 org\apache\sling\scripting\sightly\apps\myproject\components\myComponents\employeeList\employeeList__002e__html.class
 org\apache\sling\scripting\sightly\apps\myproject\components\myComponents\title\title__002e__html.class
 org\apache\sling\scripting\sightly\apps\myproject\components\xfpage\content__002e__html.class
+org\apache\sling\scripting\sightly\apps\myproject\components\myComponents\contactForm\contactForm__002e__html.class
 org\apache\sling\scripting\sightly\apps\myproject\components\tt\tt__002e__html.class
 org\apache\sling\scripting\sightly\apps\myproject\components\etPage\customfooterlibs__002e__html.class
 org\apache\sling\scripting\sightly\apps\myproject\components\etPage\customheaderlibs__002e__html.class

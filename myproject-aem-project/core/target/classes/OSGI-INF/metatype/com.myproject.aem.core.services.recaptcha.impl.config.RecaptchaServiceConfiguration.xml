@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.myproject.aem.core.services.recaptcha.impl.config.RecaptchaServiceConfiguration">
+  <OCD id="com.myproject.aem.core.services.recaptcha.impl.config.RecaptchaServiceConfiguration" name="MyProject Recaptcha Configuration" description="Contais MyProject Recaptcha Configuration Values">
+    <AD id="getReCaptchaSiteKey" type="String" name="reCaptcha site Key" description="Enter Recaptcha site key."/>
+    <AD id="getReCaptchaSecretKey" type="String" name="reCaptcha secret Key" description="Enter Recaptcha secret key."/>
+  </OCD>
+  <Designate pid="com.myproject.aem.core.services.recaptcha.impl.RecaptchaServiceImpl">
+    <Object ocdref="com.myproject.aem.core.services.recaptcha.impl.config.RecaptchaServiceConfiguration"/>
+  </Designate>
+</metatype:MetaData>

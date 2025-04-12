@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.myproject.aem.core.services.recaptcha.impl.RecaptchaServiceImpl" enabled="true" immediate="false" activate="Activate">
+  <service>
+    <provide interface="com.myproject.aem.core.services.recaptcha.RecaptchaService"/>
+  </service>
+  <implementation class="com.myproject.aem.core.services.recaptcha.impl.RecaptchaServiceImpl"/>
+</scr:component>
