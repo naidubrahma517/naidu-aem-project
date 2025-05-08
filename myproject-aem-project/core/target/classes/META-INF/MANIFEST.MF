@@ -14,21 +14,22 @@ Export-Package: com.myproject.aem.core.filters;version="1.0";uses:="ja
  ,com.myproject.aem.core.servlets;version="1.0";uses:="javax.servlet,o
  rg.apache.sling.api,org.apache.sling.api.servlets"
 Import-Package: javax.annotation;version="0.0.0",com.day.cq.mailer;ver
- sion="[6.0,7)",com.day.cq.wcm.api;version="[1.27,2)",com.google.gson;
- version="[2.8,3)",com.myproject.aem.core.filters;version="[1.0,2)",co
- m.myproject.aem.core.listeners;version="[1.0,2)",com.myproject.aem.co
- re.schedulers;version="[1.0,2)",javax.inject;version="[1.0,2)",javax.
- mail.internet;version="[1.5,2)",javax.servlet;version="[3.1,4)",org.a
- pache.commons.httpclient;version="[3.1,4)",org.apache.commons.httpcli
- ent.methods;version="[3.1,4)",org.apache.commons.mail;version="[1.5,2
- )",org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.reques
- t;version="[2.4,3)",org.apache.sling.api.resource;version="[2.11,3)",
- org.apache.sling.api.resource.observation;version="[1.2,2)",org.apach
- e.sling.api.servlets;version="[2.2,3)",org.apache.sling.commons.osgi;
- version="[2.4,3)",org.apache.sling.models.annotations;version="[1.5,2
- )",org.apache.sling.models.annotations.injectorspecific;version="[1.1
- ,2)",org.json;version="[20090211.0,20090212)",org.slf4j;version="[1.7
- ,2)"
+ sion="[6.0,7)",com.day.cq.search;version="[1.3,2)",com.day.cq.search.
+ result;version="[1.2,2)",com.day.cq.wcm.api;version="[1.27,2)",com.go
+ ogle.gson;version="[2.8,3)",com.myproject.aem.core.filters;version="[
+ 1.0,2)",com.myproject.aem.core.listeners;version="[1.0,2)",com.myproj
+ ect.aem.core.schedulers;version="[1.0,2)",javax.inject;version="[1.0,
+ 2)",javax.jcr;version="[2.0,3)",javax.mail.internet;version="[1.5,2)"
+ ,javax.servlet;version="[3.1,4)",org.apache.commons.httpclient;versio
+ n="[3.1,4)",org.apache.commons.httpclient.methods;version="[3.1,4)",o
+ rg.apache.commons.mail;version="[1.5,2)",org.apache.sling.api;version
+ ="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apache.
+ sling.api.resource;version="[2.11,3)",org.apache.sling.api.resource.o
+ bservation;version="[1.2,2)",org.apache.sling.api.servlets;version="[
+ 2.2,3)",org.apache.sling.commons.osgi;version="[2.4,3)",org.apache.sl
+ ing.models.annotations;version="[1.5,2)",org.apache.sling.models.anno
+ tations.injectorspecific;version="[1.1,2)",org.json;version="[2009021
+ 1.0,20090212)",org.slf4j;version="[1.7,2)"
 Private-Package: com.myproject.aem.core.models.bean,com.myproject.aem.
  core.services.email,com.myproject.aem.core.services.email.impl,com.my
  project.aem.core.services.recaptcha,com.myproject.aem.core.services.r
@@ -47,20 +48,22 @@ Provide-Capability: osgi.service;objectClass:List<String>="com.myproje
  n"
 Require-Capability: osgi.service;filter:="(objectClass=com.day.cq.mail
  er.MessageGatewayService)";effective:=active,osgi.service;filter:="(o
- bjectClass=com.myproject.aem.core.services.email.EmailTriggerService)
- ";effective:=active,osgi.service;filter:="(objectClass=com.myproject.
- aem.core.services.recaptcha.RecaptchaService)";effective:=active,osgi
- .extender;filter:="(&(osgi.extender=osgi.component)(version>=1.4.0)(!
- (version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))
- "
+ bjectClass=com.day.cq.search.QueryBuilder)";effective:=active,osgi.se
+ rvice;filter:="(objectClass=com.myproject.aem.core.services.email.Ema
+ ilTriggerService)";effective:=active,osgi.service;filter:="(objectCla
+ ss=com.myproject.aem.core.services.recaptcha.RecaptchaService)";effec
+ tive:=active,osgi.extender;filter:="(&(osgi.extender=osgi.component)(
+ version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Java
+ SE)(version=1.8))"
 Service-Component: OSGI-INF/com.myproject.aem.core.filters.LoggingFilt
  er.xml,OSGI-INF/com.myproject.aem.core.listeners.SimpleResourceListen
  er.xml,OSGI-INF/com.myproject.aem.core.schedulers.SimpleScheduledTask
  .xml,OSGI-INF/com.myproject.aem.core.services.email.impl.EmailTrigger
  ServiceImpl.xml,OSGI-INF/com.myproject.aem.core.services.recaptcha.im
  pl.RecaptchaServiceImpl.xml,OSGI-INF/com.myproject.aem.core.servlets.
- ContactFormServlet.xml,OSGI-INF/com.myproject.aem.core.servlets.Simpl
- eServlet.xml
+ ContactFormServlet.xml,OSGI-INF/com.myproject.aem.core.servlets.Query
+ BuilderServlet.xml,OSGI-INF/com.myproject.aem.core.servlets.SimpleSer
+ vlet.xml
 Sling-Model-Classes: com.myproject.aem.core.models.ContactFormModel,co
  m.myproject.aem.core.models.EmployeeList,com.myproject.aem.core.model
  s.HelloWorldModel,com.myproject.aem.core.models.RecaptchaModel,com.my

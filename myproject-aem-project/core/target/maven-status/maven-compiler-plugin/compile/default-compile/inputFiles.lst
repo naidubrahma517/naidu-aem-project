@@ -1,9 +1,11 @@
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\models\TitleModel.java
+D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\services\email\EmailTriggerService.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\models\RecaptchaModel.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\servlets\package-info.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\listeners\SimpleResourceListener.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\models\EmployeeList.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\models\package-info.java
+D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\servlets\QueryBuilderServlet.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\filters\package-info.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\services\recaptcha\response\RecaptchaResponse.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\schedulers\package-info.java
@@ -12,6 +14,7 @@ D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\services\recaptcha\impl\RecaptchaServiceImpl.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\servlets\SimpleServlet.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\listeners\package-info.java
+D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\services\email\impl\EmailTriggerServiceImpl.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\filters\LoggingFilter.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\models\bean\Multifield.java
 D:\Naidu\AEM Project\naidu-aem-project\myproject-aem-project\core\src\main\java\com\myproject\aem\core\services\recaptcha\impl\config\RecaptchaServiceConfiguration.java

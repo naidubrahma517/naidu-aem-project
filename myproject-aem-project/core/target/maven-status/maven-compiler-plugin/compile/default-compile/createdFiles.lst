@@ -1,5 +1,6 @@
 com\myproject\aem\core\models\package-info.class
 com\myproject\aem\core\models\RecaptchaModel.class
+com\myproject\aem\core\services\email\EmailTriggerService.class
 com\myproject\aem\core\servlets\package-info.class
 com\myproject\aem\core\services\recaptcha\impl\RecaptchaServiceImpl.class
 com\myproject\aem\core\models\EmployeeList.class
@@ -7,6 +8,8 @@ com\myproject\aem\core\models\TitleModel.class
 com\myproject\aem\core\schedulers\SimpleScheduledTask.class
 com\myproject\aem\core\services\recaptcha\response\RecaptchaResponse.class
 com\myproject\aem\core\models\ContactFormModel.class
+com\myproject\aem\core\services\email\impl\EmailTriggerServiceImpl.class
+com\myproject\aem\core\servlets\QueryBuilderServlet.class
 com\myproject\aem\core\models\HelloWorldModel.class
 com\myproject\aem\core\listeners\SimpleResourceListener.class
 com\myproject\aem\core\models\bean\Multifield.class
