@@ -4,7 +4,7 @@
 <comment>My Project - UI config</comment>
 <entry key="cloudManagerTarget">none</entry>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2025-05-08T17:53:57.734Z</entry>
+<entry key="created">2025-05-09T11:28:06.584Z</entry>
 <entry key="groupId">com.myproject.aem</entry>
 <entry key="name">myproject-aem-project.ui.config</entry>
 <entry key="description">UI config package for My Project</entry>

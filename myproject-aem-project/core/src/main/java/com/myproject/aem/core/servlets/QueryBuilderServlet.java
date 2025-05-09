@@ -62,7 +62,7 @@ public class QueryBuilderServlet extends SlingAllMethodsServlet{
                 } catch (RepositoryException e) {
                 }
                }
-                response.getWriter().write("Servlet Calling.. + <br/>");
+                response.getWriter().write("Servlet Calling... <br/>");
                 response.getWriter().write(stringBuilder.toString());
                 response.setContentType("text/html");
     }

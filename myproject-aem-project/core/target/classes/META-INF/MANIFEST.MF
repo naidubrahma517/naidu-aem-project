@@ -8,11 +8,12 @@ Bundle-Version: 0.0.1.SNAPSHOT
 Export-Package: com.myproject.aem.core.filters;version="1.0";uses:="ja
  vax.servlet",com.myproject.aem.core.listeners;version="1.0";uses:="or
  g.apache.sling.api.resource.observation",com.myproject.aem.core.model
- s;version="1.0";uses:="javax.annotation,org.apache.sling.api.resource
- ,org.apache.sling.models.annotations,org.apache.sling.models.annotati
- ons.injectorspecific",com.myproject.aem.core.schedulers;version="1.0"
- ,com.myproject.aem.core.servlets;version="1.0";uses:="javax.servlet,o
- rg.apache.sling.api,org.apache.sling.api.servlets"
+ s;version="1.0";uses:="com.day.cq.search.result,javax.annotation,org.
+ apache.sling.api.resource,org.apache.sling.models.annotations,org.apa
+ che.sling.models.annotations.injectorspecific",com.myproject.aem.core
+ .schedulers;version="1.0",com.myproject.aem.core.servlets;version="1.
+ 0";uses:="javax.servlet,org.apache.sling.api,org.apache.sling.api.ser
+ vlets"
 Import-Package: javax.annotation;version="0.0.0",com.day.cq.mailer;ver
  sion="[6.0,7)",com.day.cq.search;version="[1.3,2)",com.day.cq.search.
  result;version="[1.2,2)",com.day.cq.wcm.api;version="[1.27,2)",com.go
@@ -66,7 +67,7 @@ Service-Component: OSGI-INF/com.myproject.aem.core.filters.LoggingFilt
  vlet.xml
 Sling-Model-Classes: com.myproject.aem.core.models.ContactFormModel,co
  m.myproject.aem.core.models.EmployeeList,com.myproject.aem.core.model
- s.HelloWorldModel,com.myproject.aem.core.models.RecaptchaModel,com.my
- project.aem.core.models.TitleModel,com.myproject.aem.core.models.bean
- .Multifield
+ s.HelloWorldModel,com.myproject.aem.core.models.QueryBuilderModel,com
+ .myproject.aem.core.models.RecaptchaModel,com.myproject.aem.core.mode
+ ls.TitleModel,com.myproject.aem.core.models.bean.Multifield
 
