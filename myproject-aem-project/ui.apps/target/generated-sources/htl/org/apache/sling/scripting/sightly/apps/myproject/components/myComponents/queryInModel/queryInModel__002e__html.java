@@ -37,7 +37,6 @@ public final class queryInModel__002e__html extends RenderUnit {
 Object _dynamic_wcmmode = bindings.get("wcmmode");
 Object _global_model = null;
 Collection var_collectionvar1_list_coerced$ = null;
-Object _dynamic_itemlist = bindings.get("itemlist");
 {
     Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_dynamic_wcmmode, "edit");
     if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
@@ -67,8 +66,9 @@ out.write("\n\t<div class=\"QueryModel\">\n\t");
                                 {
                                     boolean var_traversal10 = (((var_index8 >= 0) && (var_index8 <= var_end6)) && true);
                                     if (var_traversal10) {
+                                        out.write("\n\n        <p>");
                                         {
-                                            String var_11 = (("\n\t\t" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_itemlist, "count"), "text"))) + " . ");
+                                            String var_11 = ((" " + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(pagelist, "index"), "text"))) + " . ");
                                             out.write(renderContext.getObjectModel().toString(var_11));
                                         }
                                         out.write("<a");
@@ -83,7 +83,7 @@ out.write("\n\t<div class=\"QueryModel\">\n\t");
                                             Object var_13 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(pagelist, "title"), "text");
                                             out.write(renderContext.getObjectModel().toString(var_13));
                                         }
-                                        out.write("</a> <br/>\n\t");
+                                        out.write("</a> <br/> <p>\n\t");
                                     }
                                 }
                                 var_index8++;

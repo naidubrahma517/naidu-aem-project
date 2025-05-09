@@ -5,7 +5,8 @@
 <sly data-sly-use.model="com.myproject.aem.core.models.QueryBuilderModel">
 	<div class="QueryModel" >
 	<sly data-sly-list.pageList="${model.latestPageDetails}">
-		${itemList.count} . <a href="${pageList.path}.html">${pageList.title}</a> <br/>
+
+        <p> ${pageList.index} . <a href="${pageList.path}.html">${pageList.title}</a> <br/> <p>
 	</sly>	
 	</div>
 </sly>
