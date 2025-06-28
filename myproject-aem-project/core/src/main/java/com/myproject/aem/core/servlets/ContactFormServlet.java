@@ -1,12 +1,18 @@
 package com.myproject.aem.core.servlets;
 
 import java.io.IOException;
+import java.util.Iterator;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 
+import com.adobe.cq.dam.cfm.ContentElement;
+import com.adobe.cq.dam.cfm.ContentFragment;
+import org.apache.commons.lang.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.ServletResolverConstants;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
@@ -58,9 +64,13 @@ public class ContactFormServlet extends SlingAllMethodsServlet{
             boolean validCaptcha = validationRecaptcha(formCaptcha);
             JSONObject jsonObject = new JSONObject();
             if(validCaptcha){
+                //String body = getContentFramentTemplatedata(respConnetctionFcarory.getConnection().getresResolver());
                 response.setContentType("application/json;chartset=UTF-8");
                 response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-               // emailTriggered(fromEmailAddress, toEmailAddress, subject,body);
+//                if(StringUtils.isNotBlank(body)){
+//                    String replacedEmailFinalBody = replaceBody(body, phone,email,name);
+//                }
+               // emailTriggered(fromEmailAddress, toEmailAddress, subject,replacedEmailFinalBody);
                 response.setStatus(SlingHttpServletResponse.SC_OK);
                 jsonObject.put("message", "servlet calling");
                 response.getWriter().write("successful");
@@ -85,4 +95,48 @@ public class ContactFormServlet extends SlingAllMethodsServlet{
     //     }
     // }
 
+//    /* Content Fragment template data*/
+//
+//    private String getContentFramentTemplatedata(ResourceResolver resolver)throws NullPointerException{
+//        String body ="";
+//        try{
+//            if (resolver != null){
+//                Resource res = resolver.getResource("contentFramentPath");
+//                if(res != null){
+//                    ContentFragment contentFragment = res.adaptTo(ContentFragment.class);
+//                    if(contentFragment != null){
+//                        Iterator<ContentElement> contentElementiterator = contentFragment.getElements();
+//                        while (contentElementiterator.hasNext()){
+//                            ContentElement contentElementObject = contentElementiterator.next();
+//                            body = contentElementObject.getContent();
+//                        }
+//                    }
+//                }
+//            } return body;
+//        } catch (Exception e){
+//            e.printStackTrace();
+//        }
+//        return null;
+//    }
+
+
+//    /* replace body method */
+//
+//    public String replaceBody (String body, String name ,  String email, String phone) {
+//        String replaceBody ="";
+//        if(body.contains("%name%")){
+//            replaceBody = body.replace("%name%",name);
+//        }
+//        if(body.contains("%email%")){
+//            replaceBody = body.replace("%mail%",email);
+//        }
+//        if(body.contains("%phone%")){
+//            replaceBody = body.replace("%phone%",phone);
+//        }
+//        if(StringUtils.isNotBlank(replaceBody)){
+//            return replaceBody;
+//        } else{
+//            return body;
+//        }
+//    }
 }

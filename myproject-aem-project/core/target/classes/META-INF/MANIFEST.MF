@@ -30,44 +30,59 @@ Import-Package: javax.annotation;version="0.0.0",com.day.cq.mailer;ver
  2.2,3)",org.apache.sling.commons.osgi;version="[2.4,3)",org.apache.sl
  ing.models.annotations;version="[1.5,2)",org.apache.sling.models.anno
  tations.injectorspecific;version="[1.1,2)",org.json;version="[2009021
- 1.0,20090212)",org.slf4j;version="[1.7,2)"
+ 1.0,20090212)",org.osgi.framework;version="[1.9,2)",org.osgi.service.
+ component;version="[1.4,2)",org.slf4j;version="[1.7,2)"
 Private-Package: com.myproject.aem.core.models.bean,com.myproject.aem.
- core.services.email,com.myproject.aem.core.services.email.impl,com.my
- project.aem.core.services.recaptcha,com.myproject.aem.core.services.r
- ecaptcha.impl,com.myproject.aem.core.services.recaptcha.impl.config,c
- om.myproject.aem.core.services.recaptcha.response
+ core.models.practiceService,com.myproject.aem.core.services.email,com
+ .myproject.aem.core.services.email.impl,com.myproject.aem.core.servic
+ es.practiceOSGI,com.myproject.aem.core.services.practiceOSGI.impl,com
+ .myproject.aem.core.services.recaptcha,com.myproject.aem.core.service
+ s.recaptcha.impl,com.myproject.aem.core.services.recaptcha.impl.confi
+ g,com.myproject.aem.core.services.recaptcha.response,com.myproject.ae
+ m.core.services.user,com.myproject.aem.core.services.user.impl
 Provide-Capability: osgi.service;objectClass:List<String>="com.myproje
  ct.aem.core.services.email.EmailTriggerService";uses:="com.myproject.
  aem.core.services.email",osgi.service;objectClass:List<String>="com.m
- yproject.aem.core.services.recaptcha.RecaptchaService";uses:="com.myp
- roject.aem.core.services.recaptcha",osgi.service;objectClass:List<Str
- ing>="java.lang.Runnable",osgi.service;objectClass:List<String>="java
- x.servlet.Filter";uses:="javax.servlet",osgi.service;objectClass:List
- <String>="javax.servlet.Servlet";uses:="javax.servlet",osgi.service;o
- bjectClass:List<String>="org.apache.sling.api.resource.observation.Re
- sourceChangeListener";uses:="org.apache.sling.api.resource.observatio
- n"
+ yproject.aem.core.services.practiceOSGI.DemoService";uses:="com.mypro
+ ject.aem.core.services.practiceOSGI",osgi.service;objectClass:List<St
+ ring>="com.myproject.aem.core.services.recaptcha.RecaptchaService";us
+ es:="com.myproject.aem.core.services.recaptcha",osgi.service;objectCl
+ ass:List<String>="com.myproject.aem.core.services.user.Practiceuser";
+ uses:="com.myproject.aem.core.services.user",osgi.service;objectClass
+ :List<String>="java.lang.Runnable",osgi.service;objectClass:List<Stri
+ ng>="javax.servlet.Filter";uses:="javax.servlet",osgi.service;objectC
+ lass:List<String>="javax.servlet.Servlet";uses:="javax.servlet",osgi.
+ service;objectClass:List<String>="org.apache.sling.api.resource.obser
+ vation.ResourceChangeListener";uses:="org.apache.sling.api.resource.o
+ bservation"
 Require-Capability: osgi.service;filter:="(objectClass=com.day.cq.mail
  er.MessageGatewayService)";effective:=active,osgi.service;filter:="(o
  bjectClass=com.day.cq.search.QueryBuilder)";effective:=active,osgi.se
  rvice;filter:="(objectClass=com.myproject.aem.core.services.email.Ema
  ilTriggerService)";effective:=active,osgi.service;filter:="(objectCla
  ss=com.myproject.aem.core.services.recaptcha.RecaptchaService)";effec
- tive:=active,osgi.extender;filter:="(&(osgi.extender=osgi.component)(
- version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Java
- SE)(version=1.8))"
+ tive:=active,osgi.service;filter:="(objectClass=com.myproject.aem.cor
+ e.services.user.Practiceuser)";effective:=active,osgi.service;filter:
+ ="(objectClass=org.apache.sling.api.resource.ResourceResolverFactory)
+ ";effective:=active,osgi.extender;filter:="(&(osgi.extender=osgi.comp
+ onent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.
+ ee=JavaSE)(version=1.8))"
 Service-Component: OSGI-INF/com.myproject.aem.core.filters.LoggingFilt
  er.xml,OSGI-INF/com.myproject.aem.core.listeners.SimpleResourceListen
  er.xml,OSGI-INF/com.myproject.aem.core.schedulers.SimpleScheduledTask
  .xml,OSGI-INF/com.myproject.aem.core.services.email.impl.EmailTrigger
- ServiceImpl.xml,OSGI-INF/com.myproject.aem.core.services.recaptcha.im
- pl.RecaptchaServiceImpl.xml,OSGI-INF/com.myproject.aem.core.servlets.
- ContactFormServlet.xml,OSGI-INF/com.myproject.aem.core.servlets.Query
- BuilderServlet.xml,OSGI-INF/com.myproject.aem.core.servlets.SimpleSer
- vlet.xml
+ ServiceImpl.xml,OSGI-INF/com.myproject.aem.core.services.practiceOSGI
+ .impl.DemoServiceImpl.xml,OSGI-INF/com.myproject.aem.core.services.re
+ captcha.impl.RecaptchaServiceImpl.xml,OSGI-INF/com.myproject.aem.core
+ .services.user.impl.PracticeuserImpl.xml,OSGI-INF/com.myproject.aem.c
+ ore.servlets.ContactFormServlet.xml,OSGI-INF/com.myproject.aem.core.s
+ ervlets.QueryBuilderServlet.xml,OSGI-INF/com.myproject.aem.core.servl
+ ets.ResourceTestServlet.xml,OSGI-INF/com.myproject.aem.core.servlets.
+ SimpleServlet.xml
 Sling-Model-Classes: com.myproject.aem.core.models.ContactFormModel,co
  m.myproject.aem.core.models.EmployeeList,com.myproject.aem.core.model
  s.HelloWorldModel,com.myproject.aem.core.models.QueryBuilderModel,com
  .myproject.aem.core.models.RecaptchaModel,com.myproject.aem.core.mode
- ls.TitleModel,com.myproject.aem.core.models.bean.Multifield
+ ls.TitleModel,com.myproject.aem.core.models.bean.Multifield,com.mypro
+ ject.aem.core.models.practiceService.DemoServiceModel
 

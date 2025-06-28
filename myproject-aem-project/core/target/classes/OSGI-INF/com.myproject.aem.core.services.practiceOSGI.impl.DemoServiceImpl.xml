@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.myproject.aem.core.services.practiceOSGI.impl.DemoServiceImpl" immediate="true" activate="activate" deactivate="deActivate">
+  <service>
+    <provide interface="com.myproject.aem.core.services.practiceOSGI.DemoService"/>
+  </service>
+  <reference name="practiceuser" interface="com.myproject.aem.core.services.user.Practiceuser" field="practiceuser"/>
+  <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resourceResolverFactory"/>
+  <implementation class="com.myproject.aem.core.services.practiceOSGI.impl.DemoServiceImpl"/>
+</scr:component>

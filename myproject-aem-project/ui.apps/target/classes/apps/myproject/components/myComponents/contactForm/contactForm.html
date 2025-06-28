@@ -1,0 +1,48 @@
+<sly data-sly-test="${wcmmode.edit}">
+	<div class="cq-placeholder" data-emptyText=" please configure contactForm component"></div>
+</sly>
+<sly data-sly-use.recaptchaModel="com.myproject.aem.core.models.RecaptchaModel"/>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='myproject.components.myComponents.contactForm'}"/>
+
+<sly data-sly-use.model="com.myproject.aem.core.models.ContactFormModel"/>
+<div class="containerWrapper">
+<div class="container">
+  <form>
+    <label for="companyName">${model.companyName}</label>
+    <input type="text" id="companyName" name="companyName" placeholder="company name.."> </br>
+
+    <label for="name">${model.name}</label>
+    <input type="text" id="name" name="name" placeholder="Your name.."></br>
+
+    <label for="phoneNumber">${model.phoneNumber}</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Your number.."></br>
+
+    <label for="country">${model.country}</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="india">INDIA</option>
+    </select>
+	</br>
+    <label for="eMail">${model.eMail}</label>
+    <input type="text" id="eMail" name="eMail" placeholder="Write your mail"></br>
+
+    <==============************{Captcha}*************=================>
+
+    <div class="captchaStart" >
+    <input type="hidden" id="siteKey" name="sitekey" value="${recaptchaModel.siteKey}" disabled="disabled">
+    <div class="large-6 medium-6 small-12 columns captcha">
+    <div id="g-recaptcha"></div>
+    <input type="hidden" id="captchaCheck" value="" name="captcha">
+    <input type="hidden" disabled="disabled" id="captchaAlert" data-message="Field Required" name="captcha">
+    </div>
+    </div>
+    <button class="button" type="button">Click Me!</button>
+  </form>
+</div>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.myproject.aem.core.servlets.ResourceTestServlet">
+  <property name="service.description" type="String" value="Custom Servlets"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <property name="sling.servlet.paths" type="String" value="/bin/practiceuser"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="practiceuser" interface="com.myproject.aem.core.services.user.Practiceuser" field="practiceuser"/>
+  <implementation class="com.myproject.aem.core.servlets.ResourceTestServlet"/>
+</scr:component>
