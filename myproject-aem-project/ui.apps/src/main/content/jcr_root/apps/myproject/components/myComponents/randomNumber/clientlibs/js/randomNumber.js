@@ -1,4 +1,3 @@
-
 console.log(" loading random js ");
 // Select DOM elements
 const min = document.getElementById('min');
@@ -12,10 +11,6 @@ function genRandNum() {
 
     const minVal = parseInt(min.value);
     const maxVal = parseInt(max.value);
-
-console.log(minVal + " numver");
-    //const minVal = parseInt(min);
-    //const maxVal = parseInt(max);
 
     // Validate inputs
     /*if (isNaN(minVal) || isNaN(maxVal) || minVal <= maxVal) {
