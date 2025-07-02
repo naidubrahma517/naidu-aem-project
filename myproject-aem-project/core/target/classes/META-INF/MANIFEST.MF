@@ -8,12 +8,12 @@ Bundle-Version: 0.0.1.SNAPSHOT
 Export-Package: com.myproject.aem.core.filters;version="1.0";uses:="ja
  vax.servlet",com.myproject.aem.core.listeners;version="1.0";uses:="or
  g.apache.sling.api.resource.observation",com.myproject.aem.core.model
- s;version="1.0";uses:="com.day.cq.search.result,javax.annotation,org.
- apache.sling.api.resource,org.apache.sling.models.annotations,org.apa
- che.sling.models.annotations.injectorspecific",com.myproject.aem.core
- .schedulers;version="1.0",com.myproject.aem.core.servlets;version="1.
- 0";uses:="javax.servlet,org.apache.sling.api,org.apache.sling.api.ser
- vlets"
+ s;version="1.0";uses:="com.day.cq.search.result,javax.annotation,java
+ x.inject,org.apache.sling.api.resource,org.apache.sling.models.annota
+ tions,org.apache.sling.models.annotations.injectorspecific",com.mypro
+ ject.aem.core.schedulers;version="1.0",com.myproject.aem.core.servlet
+ s;version="1.0";uses:="javax.servlet,org.apache.sling.api,org.apache.
+ sling.api.servlets"
 Import-Package: javax.annotation;version="0.0.0",com.day.cq.mailer;ver
  sion="[6.0,7)",com.day.cq.search;version="[1.3,2)",com.day.cq.search.
  result;version="[1.2,2)",com.day.cq.wcm.api;version="[1.27,2)",com.go
@@ -23,15 +23,19 @@ Import-Package: javax.annotation;version="0.0.0",com.day.cq.mailer;ver
  2)",javax.jcr;version="[2.0,3)",javax.mail.internet;version="[1.5,2)"
  ,javax.servlet;version="[3.1,4)",org.apache.commons.httpclient;versio
  n="[3.1,4)",org.apache.commons.httpclient.methods;version="[3.1,4)",o
- rg.apache.commons.mail;version="[1.5,2)",org.apache.sling.api;version
- ="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apache.
- sling.api.resource;version="[2.11,3)",org.apache.sling.api.resource.o
- bservation;version="[1.2,2)",org.apache.sling.api.servlets;version="[
- 2.2,3)",org.apache.sling.commons.osgi;version="[2.4,3)",org.apache.sl
- ing.models.annotations;version="[1.5,2)",org.apache.sling.models.anno
- tations.injectorspecific;version="[1.1,2)",org.json;version="[2009021
- 1.0,20090212)",org.osgi.framework;version="[1.9,2)",org.osgi.service.
- component;version="[1.4,2)",org.slf4j;version="[1.7,2)"
+ rg.apache.commons.mail;version="[1.5,2)",org.apache.http;version="[4.
+ 4,5)",org.apache.http.client;version="[4.5,5)",org.apache.http.client
+ .methods;version="[4.5,5)",org.apache.http.entity;version="[4.4,5)",o
+ rg.apache.http.impl.client;version="[4.5,5)",org.apache.http.util;ver
+ sion="[4.4,5)",org.apache.sling.api;version="[2.3,3)",org.apache.slin
+ g.api.request;version="[2.4,3)",org.apache.sling.api.resource;version
+ ="[2.11,3)",org.apache.sling.api.resource.observation;version="[1.2,2
+ )",org.apache.sling.api.servlets;version="[2.2,3)",org.apache.sling.c
+ ommons.osgi;version="[2.4,3)",org.apache.sling.models.annotations;ver
+ sion="[1.5,2)",org.apache.sling.models.annotations.injectorspecific;v
+ ersion="[1.1,2)",org.json;version="[20090211.0,20090212)",org.osgi.fr
+ amework;version="[1.9,2)",org.osgi.service.component;version="[1.4,2)
+ ",org.slf4j;version="[1.7,2)"
 Private-Package: com.myproject.aem.core.models.bean,com.myproject.aem.
  core.models.practiceService,com.myproject.aem.core.services.email,com
  .myproject.aem.core.services.email.impl,com.myproject.aem.core.servic
@@ -81,8 +85,9 @@ Service-Component: OSGI-INF/com.myproject.aem.core.filters.LoggingFilt
  SimpleServlet.xml
 Sling-Model-Classes: com.myproject.aem.core.models.ContactFormModel,co
  m.myproject.aem.core.models.EmployeeList,com.myproject.aem.core.model
- s.HelloWorldModel,com.myproject.aem.core.models.QueryBuilderModel,com
- .myproject.aem.core.models.RecaptchaModel,com.myproject.aem.core.mode
- ls.TitleModel,com.myproject.aem.core.models.bean.Multifield,com.mypro
- ject.aem.core.models.practiceService.DemoServiceModel
+ s.HelloWorldModel,com.myproject.aem.core.models.MultifieldCommon,com.
+ myproject.aem.core.models.QueryBuilderModel,com.myproject.aem.core.mo
+ dels.RecaptchaModel,com.myproject.aem.core.models.TitleModel,com.mypr
+ oject.aem.core.models.bean.Multifield,com.myproject.aem.core.models.p
+ racticeService.DemoServiceModel
 

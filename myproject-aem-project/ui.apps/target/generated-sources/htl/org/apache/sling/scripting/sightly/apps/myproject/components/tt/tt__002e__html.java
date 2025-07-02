@@ -42,7 +42,7 @@ Object _dynamic_properties = bindings.get("properties");
         out.write("\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure TT component\"></div>\n");
     }
 }
-out.write("\n<div class=\"lable\"> exaple tt component </div></br>");
+out.write("\n<div class=\"lable\"> exaple tt component in my project</div></br>");
 {
     String var_1 = (("\n" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "label"), "text"))) + "\n");
     out.write(renderContext.getObjectModel().toString(var_1));
