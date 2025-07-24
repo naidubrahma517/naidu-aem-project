@@ -1,4 +1,5 @@
 com\myproject\aem\core\models\practiceService\DemoServiceModel.class
+com\myproject\aem\core\servlets\DynamicDropdownThroughDatasource.class
 com\myproject\aem\core\services\email\EmailTriggerService.class
 com\myproject\aem\core\services\recaptcha\impl\RecaptchaServiceImpl.class
 com\myproject\aem\core\models\EmployeeList.class
@@ -10,6 +11,7 @@ com\myproject\aem\core\servlets\QueryBuilderServlet.class
 com\myproject\aem\core\listeners\SimpleResourceListener.class
 com\myproject\aem\core\filters\package-info.class
 com\myproject\aem\core\servlets\ContactFormServlet.class
+com\myproject\aem\core\models\MultifieldCommon.class
 com\myproject\aem\core\models\package-info.class
 com\myproject\aem\core\models\RecaptchaModel.class
 com\myproject\aem\core\servlets\package-info.class
@@ -25,6 +27,7 @@ com\myproject\aem\core\servlets\SimpleServlet.class
 com\myproject\aem\core\filters\LoggingFilter.class
 com\myproject\aem\core\services\user\Practiceuser.class
 com\myproject\aem\core\services\practiceOSGI\DemoService.class
+com\myproject\aem\core\models\APICall.class
 com\myproject\aem\core\services\recaptcha\RecaptchaService.class
 com\myproject\aem\core\services\recaptcha\impl\config\RecaptchaServiceConfiguration.class
 com\myproject\aem\core\listeners\package-info.class

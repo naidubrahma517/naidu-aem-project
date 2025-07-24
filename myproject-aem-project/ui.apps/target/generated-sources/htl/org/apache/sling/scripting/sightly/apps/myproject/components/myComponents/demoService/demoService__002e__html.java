@@ -35,57 +35,12 @@ public final class demoService__002e__html extends RenderUnit {
 // Main Template Body -----------------------------------------------------------------------------
 
 Object _dynamic_wcmmode = bindings.get("wcmmode");
-Object _global_model = null;
-Collection var_collectionvar1_list_coerced$ = null;
-out.write("<h1> Demo Service <h1>\n\n");
+Object _dynamic_model = bindings.get("model");
+Object _dynamic_pagetitle = bindings.get("pagetitle");
 {
-    Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_dynamic_wcmmode, "edit");
-    if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
-        out.write("\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure Demo Service component\"></div>\n");
-    }
+    String var_0 = (((((("<!--/*<h1> Demo Service <h1>\n\n<sly data-sly-test=\"" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_wcmmode, "edit"), "text"))) + "\">\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure Demo Service component\"></div>\n</sly>\n\n============================ Demo Service and Iterator ===========================\n<sly data-sly-use.model=\"com.myproject.aem.core.services.practiceOSGI.DemoService.DemoServiceModel\">\n\t<<ul>\n        <sly data-sly-list.pageTitle=\"") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_model, "pageTitles"), "text"))) + "\">\n            <li><b>") + renderContext.getObjectModel().toString(renderContext.call("xss", _dynamic_pagetitle, "text"))) + "</b></li>\n        </sly>\n    </ul>\n</sly> */--!>\n");
+    out.write(renderContext.getObjectModel().toString(var_0));
 }
-out.write("\n\n============================ Demo Service and Iterator ===========================\n");
-_global_model = renderContext.call("use", "com.myproject.aem.core.services.practiceOSGI.DemoService.DemoServiceModel", obj());
-out.write("\n\t<<ul>\n        ");
-{
-    Object var_collectionvar1 = renderContext.getObjectModel().resolveProperty(_global_model, "pageTitles");
-    {
-        long var_size2 = ((var_collectionvar1_list_coerced$ == null ? (var_collectionvar1_list_coerced$ = renderContext.getObjectModel().toCollection(var_collectionvar1)) : var_collectionvar1_list_coerced$).size());
-        {
-            boolean var_notempty3 = (var_size2 > 0);
-            if (var_notempty3) {
-                {
-                    long var_end6 = var_size2;
-                    {
-                        boolean var_validstartstepend7 = (((0 < var_size2) && true) && (var_end6 > 0));
-                        if (var_validstartstepend7) {
-                            if (var_collectionvar1_list_coerced$ == null) {
-                                var_collectionvar1_list_coerced$ = renderContext.getObjectModel().toCollection(var_collectionvar1);
-                            }
-                            long var_index8 = 0;
-                            for (Object pagetitle : var_collectionvar1_list_coerced$) {
-                                {
-                                    boolean var_traversal10 = (((var_index8 >= 0) && (var_index8 <= var_end6)) && true);
-                                    if (var_traversal10) {
-                                        out.write("\n            <li><b>");
-                                        {
-                                            Object var_11 = renderContext.call("xss", pagetitle, "text");
-                                            out.write(renderContext.getObjectModel().toString(var_11));
-                                        }
-                                        out.write("</b></li>\n        ");
-                                    }
-                                }
-                                var_index8++;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    var_collectionvar1_list_coerced$ = null;
-}
-out.write("\n    </ul>\n\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

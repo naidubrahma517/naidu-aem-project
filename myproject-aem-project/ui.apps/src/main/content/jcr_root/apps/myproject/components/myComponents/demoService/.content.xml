@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2025-06-05T20:41:12.426+05:30"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
     jcr:description="Demo Service"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
     jcr:primaryType="cq:Component"
     jcr:title="demoService"
     componentGroup="My Project - Content"/>
