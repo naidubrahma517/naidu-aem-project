@@ -4,4 +4,4 @@
     jcr:description="Section Heading"
     jcr:primaryType="cq:Component"
     jcr:title="My Teaser"
-    componentGroup="My Components"/>
+    componentGroup="My Project - Content"/>
