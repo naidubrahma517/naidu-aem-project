@@ -1,0 +1,26 @@
+<sly data-sly-test="${wcmmode.edit}">
+	<div class="cq-placeholder" data-emptyText=" please configure Teaser component"></div>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='your-app-id/components/my-custom-components/myteaser'}"/>
+     
+<div class="carousel">
+ <!--/* <div class="carousel-track">
+    <div class="carousel-slide">${properties.title1}</div>
+    <div class="carousel-slide">${properties.title2}</div>
+    <div class="carousel-slide">${properties.title3}</div>
+  </div>*/-->
+  <div class="carousel-track">
+    <div class="carousel-slide"><a href="https://www.google.com/"><img src="${properties.image2}" alt="Italian Trulli" width="100" height="100"></div></a>
+    <div class="carousel-slide"><a href="https://www.google.com/"><img src="${properties.image1}" alt="Italian Trulli" width="100" height="100"></div></a>
+    <div class="carousel-slide"><a href="https://www.google.com/"><img src="${properties.image3}" alt="Italian Trulli" width="100" height="100"></div></a>
+  </div>
+  <button class="carousel-btn prev" aria-label="Previous Slide">❮</button>
+  <button class="carousel-btn next" aria-label="Next Slide">❯</button>
+</div>
+
+<img src="/content/dam/my-images/aurora-banner-mb.png" alt="Italian Trulli">
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.js @ categories='your-app-id/components/my-custom-components/myteaser'}"/>
+     
