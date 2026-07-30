@@ -40,14 +40,14 @@ Collection var_collectionvar2_list_coerced$ = null;
 {
     Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_dynamic_wcmmode, "edit");
     if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
-        out.write("\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure Employee List component\"></div>\n");
+        out.write("\r\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure Employee List component\"></div>\r\n");
     }
 }
-out.write("\n\n");
+out.write("\r\n\r\n");
 _global_model = renderContext.call("use", com.myproject.aem.core.models.EmployeeList.class.getName(), obj());
-out.write("\n\t<div class=\"companyName\">");
+out.write("\r\n\t<div class=\"companyName\">");
 {
-    String var_1 = (("\n\t" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "companyName"), "text"))) + "\n\t");
+    String var_1 = (("\r\n\t" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "companyName"), "text"))) + "\r\n\t");
     out.write(renderContext.getObjectModel().toString(var_1));
 }
 {
@@ -70,17 +70,17 @@ out.write("\n\t<div class=\"companyName\">");
                                 {
                                     boolean var_traversal11 = (((var_index9 >= 0) && (var_index9 <= var_end7)) && true);
                                     if (var_traversal11) {
-                                        out.write("\n\t\t<div class=\"empList\">");
+                                        out.write("\r\n\t\t<div class=\"empList\">");
                                         {
-                                            String var_12 = (("\n\t\t========== \"" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "count"), "text"))) + "\" ==========");
+                                            String var_12 = (("\r\n\t\t========== \"" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "count"), "text"))) + "\" ==========");
                                             out.write(renderContext.getObjectModel().toString(var_12));
                                         }
                                         out.write("</br>");
                                         {
-                                            String var_13 = (((((("\n\t\t\t" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "rollNumber"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "name"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "age"), "text"))) + "\n\t\t");
+                                            String var_13 = (((((("\r\n\t\t\t" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "rollNumber"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "name"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(emplist, "age"), "text"))) + "\r\n\t\t");
                                             out.write(renderContext.getObjectModel().toString(var_13));
                                         }
-                                        out.write("</div>\n\t");
+                                        out.write("</div>\r\n\t");
                                     }
                                 }
                                 var_index9++;
@@ -93,7 +93,7 @@ out.write("\n\t<div class=\"companyName\">");
     }
     var_collectionvar2_list_coerced$ = null;
 }
-out.write("\t\n\t</div>\n\n");
+out.write("\t\r\n\t</div>\r\n\r\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

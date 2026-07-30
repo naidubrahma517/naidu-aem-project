@@ -41,12 +41,12 @@ Object _global_model = null;
 {
     Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_dynamic_wcmmode, "edit");
     if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
-        out.write("\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure contactForm component\"></div>\n");
+        out.write("\r\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure contactForm component\"></div>\r\n");
     }
 }
-out.write("\n");
+out.write("\r\n");
 _global_recaptchamodel = renderContext.call("use", com.myproject.aem.core.models.RecaptchaModel.class.getName(), obj());
-out.write("\n");
+out.write("\r\n");
 _global_clientlib = renderContext.call("use", "/libs/granite/sightly/templates/clientlib.html", obj());
 {
     Object var_templatevar1 = renderContext.getObjectModel().resolveProperty(_global_clientlib, "all");
@@ -58,34 +58,34 @@ _global_clientlib = renderContext.call("use", "/libs/granite/sightly/templates/c
         }
     }
 }
-out.write("\n\n");
+out.write("\r\n\r\n");
 _global_model = renderContext.call("use", com.myproject.aem.core.models.ContactFormModel.class.getName(), obj());
-out.write("\n<div class=\"containerWrapper\">\n<div class=\"container\">\n  <form>\n    <label for=\"companyName\">");
+out.write("\r\n<div class=\"containerWrapper\">\r\n<div class=\"container\">\r\n  <form>\r\n    <label for=\"companyName\">");
 {
     Object var_3 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "companyName"), "text");
     out.write(renderContext.getObjectModel().toString(var_3));
 }
-out.write("</label>\n    <input type=\"text\" id=\"companyName\" name=\"companyName\" placeholder=\"company name..\"/> </br>\n\n    <label for=\"name\">");
+out.write("</label>\r\n    <input type=\"text\" id=\"companyName\" name=\"companyName\" placeholder=\"company name..\"/> </br>\r\n\r\n    <label for=\"name\">");
 {
     Object var_4 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "name"), "text");
     out.write(renderContext.getObjectModel().toString(var_4));
 }
-out.write("</label>\n    <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Your name..\"/></br>\n\n    <label for=\"phoneNumber\">");
+out.write("</label>\r\n    <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Your name..\"/></br>\r\n\r\n    <label for=\"phoneNumber\">");
 {
     Object var_5 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "phoneNumber"), "text");
     out.write(renderContext.getObjectModel().toString(var_5));
 }
-out.write("</label>\n    <input type=\"text\" id=\"phoneNumber\" name=\"phoneNumber\" placeholder=\"Your number..\"/></br>\n\n    <label for=\"country\">");
+out.write("</label>\r\n    <input type=\"text\" id=\"phoneNumber\" name=\"phoneNumber\" placeholder=\"Your number..\"/></br>\r\n\r\n    <label for=\"country\">");
 {
     Object var_6 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "country"), "text");
     out.write(renderContext.getObjectModel().toString(var_6));
 }
-out.write("</label>\n    <select id=\"country\" name=\"country\">\n      <option value=\"australia\">Australia</option>\n      <option value=\"canada\">Canada</option>\n      <option value=\"usa\">USA</option>\n      <option value=\"india\">INDIA</option>\n    </select>\n\t</br>\n    <label for=\"eMail\">");
+out.write("</label>\r\n    <select id=\"country\" name=\"country\">\r\n      <option value=\"australia\">Australia</option>\r\n      <option value=\"canada\">Canada</option>\r\n      <option value=\"usa\">USA</option>\r\n      <option value=\"india\">INDIA</option>\r\n    </select>\r\n\t</br>\r\n    <label for=\"eMail\">");
 {
     Object var_7 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "eMail"), "text");
     out.write(renderContext.getObjectModel().toString(var_7));
 }
-out.write("</label>\n    <input type=\"text\" id=\"eMail\" name=\"eMail\" placeholder=\"Write your mail\"/></br>\n\n    <==============************{Captcha}*************=================>\n\n    <div class=\"captchaStart\">\n    <input type=\"hidden\" id=\"siteKey\" name=\"sitekey\"");
+out.write("</label>\r\n    <input type=\"text\" id=\"eMail\" name=\"eMail\" placeholder=\"Write your mail\"/></br>\r\n\r\n    <==============************{Captcha}*************=================>\r\n\r\n    <div class=\"captchaStart\">\r\n    <input type=\"hidden\" id=\"siteKey\" name=\"sitekey\"");
 {
     Object var_attrvalue8 = renderContext.getObjectModel().resolveProperty(_global_recaptchamodel, "siteKey");
     {
@@ -106,7 +106,7 @@ out.write("</label>\n    <input type=\"text\" id=\"eMail\" name=\"eMail\" placeh
         }
     }
 }
-out.write(" disabled=\"disabled\"/>\n    <div class=\"large-6 medium-6 small-12 columns captcha\">\n    <div id=\"g-recaptcha\"></div>\n    <input type=\"hidden\" id=\"captchaCheck\" value=\"\" name=\"captcha\"/>\n    <input type=\"hidden\" disabled=\"disabled\" id=\"captchaAlert\" data-message=\"Field Required\" name=\"captcha\"/>\n    </div>\n    </div>\n    <button class=\"button\" type=\"button\">Click Me!</button>\n  </form>\n</div>\n<script src=\"https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit\" async defer>\n    </script>\n</div>\n");
+out.write(" disabled=\"disabled\"/>\r\n    <div class=\"large-6 medium-6 small-12 columns captcha\">\r\n    <div id=\"g-recaptcha\"></div>\r\n    <input type=\"hidden\" id=\"captchaCheck\" value=\"\" name=\"captcha\"/>\r\n    <input type=\"hidden\" disabled=\"disabled\" id=\"captchaAlert\" data-message=\"Field Required\" name=\"captcha\"/>\r\n    </div>\r\n    </div>\r\n    <button class=\"button\" type=\"button\">Click Me!</button>\r\n  </form>\r\n</div>\r\n<script src=\"https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit\" async defer>\r\n    </script>\r\n</div>\r\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

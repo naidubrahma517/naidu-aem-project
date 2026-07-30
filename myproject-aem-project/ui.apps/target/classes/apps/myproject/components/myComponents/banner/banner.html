@@ -1,0 +1,15 @@
+<sly data-sly-test="${wcmmode.edit}">
+	<div class="cq-placeholder" data-emptyText=" please configure Banner component"></div>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='myproject.components.myComponents.banner'}"/>
+     
+<div class="banner">
+    <h1>Landing Page = ${properties.bannerName}</h1>
+    <h1>Landing Page = ${properties.bannerPhoneNumber}</h1>
+    <h1>Content Page = ${properties.bannerEMail}</h1>
+    <h1>Content Page = ${properties.bannerCountry}</h1>
+</div>
+<!--/*
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.js @ categories='myproject.components.myComponents.banner'}"/> */-->

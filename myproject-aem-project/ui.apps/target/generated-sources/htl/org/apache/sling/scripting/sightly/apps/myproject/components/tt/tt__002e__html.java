@@ -39,12 +39,12 @@ Object _dynamic_properties = bindings.get("properties");
 {
     Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_dynamic_wcmmode, "edit");
     if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
-        out.write("\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure TT component\"></div>\n");
+        out.write("\r\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure TT component\"></div>\r\n");
     }
 }
-out.write("\n<div class=\"lable\"> exaple tt component in my project</div></br>");
+out.write("\r\n<div class=\"lable\"> exaple tt component in my project</div></br>");
 {
-    String var_1 = (("\n" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "label"), "text"))) + "\n");
+    String var_1 = (("\r\n" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "label"), "text"))) + "\r\n");
     out.write(renderContext.getObjectModel().toString(var_1));
 }
 

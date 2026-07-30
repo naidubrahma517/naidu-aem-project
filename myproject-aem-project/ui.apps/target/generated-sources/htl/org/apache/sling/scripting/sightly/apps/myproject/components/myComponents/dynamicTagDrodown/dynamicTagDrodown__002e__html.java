@@ -39,20 +39,20 @@ Object _dynamic_properties = bindings.get("properties");
 {
     Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_dynamic_wcmmode, "edit");
     if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
-        out.write("\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure Dynamic Dopdown component\"></div>\n");
+        out.write("\r\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure Dynamic Dopdown component\"></div>\r\n");
     }
 }
-out.write("\n\n\n<div class=\"body\">\n\t<div>");
+out.write("\r\n\r\n\r\n<div class=\"body\">\r\n\t<div>");
 {
     String var_1 = (" " + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "title"), "text")));
     out.write(renderContext.getObjectModel().toString(var_1));
 }
-out.write("</div><br/>\n\t<div>");
+out.write("</div><br/>\r\n\t<div>");
 {
     String var_2 = (" " + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "dropdown"), "text")));
     out.write(renderContext.getObjectModel().toString(var_2));
 }
-out.write("</div><br/>\n</div>\n");
+out.write("</div><br/>\r\n</div>\r\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

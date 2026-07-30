@@ -5,6 +5,7 @@ com\myproject\aem\core\services\recaptcha\impl\RecaptchaServiceImpl.class
 com\myproject\aem\core\models\EmployeeList.class
 com\myproject\aem\core\models\TitleModel.class
 com\myproject\aem\core\schedulers\SimpleScheduledTask.class
+com\myproject\aem\core\servlets\TemplateRenderConditionServlet.class
 com\myproject\aem\core\services\practiceOSGI\impl\DemoServiceImpl.class
 com\myproject\aem\core\services\email\impl\EmailTriggerServiceImpl.class
 com\myproject\aem\core\servlets\QueryBuilderServlet.class

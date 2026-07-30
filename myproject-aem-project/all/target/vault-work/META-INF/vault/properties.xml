@@ -3,7 +3,7 @@
 <properties>
 <comment>My Project - All</comment>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2025-07-24T16:38:48.298Z</entry>
+<entry key="created">2026-07-30T07:15:25.045Z</entry>
 <entry key="groupId">com.myproject.aem</entry>
 <entry key="name">myproject-aem-project.all</entry>
 <entry key="description">All content package for My Project</entry>

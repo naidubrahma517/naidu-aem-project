@@ -39,17 +39,17 @@ Object _global_model = null;
 {
     Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_dynamic_wcmmode, "edit");
     if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
-        out.write("\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure TITLE component\"></div>\n");
+        out.write("\r\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure TITLE component\"></div>\r\n");
     }
 }
-out.write("\n\n");
+out.write("\r\n\r\n");
 _global_model = renderContext.call("use", com.myproject.aem.core.models.TitleModel.class.getName(), obj());
-out.write("\n\t<div class=\"title\">");
+out.write("\r\n\t<div class=\"title\">");
 {
-    String var_1 = (((((("\n\t" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "getNumber"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "getTitle"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "isCheckbox"), "text"))) + "\n\t");
+    String var_1 = (((((("\r\n\t" + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "getNumber"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "getTitle"), "text"))) + " -- ") + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_global_model, "isCheckbox"), "text"))) + "\r\n\t");
     out.write(renderContext.getObjectModel().toString(var_1));
 }
-out.write("</div>\n\n");
+out.write("</div>\r\n\r\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

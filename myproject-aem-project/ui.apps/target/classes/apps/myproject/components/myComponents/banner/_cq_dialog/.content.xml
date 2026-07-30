@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Banner"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[myproject.components.myComponents.banner]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+        margin="{Boolean}false">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <companyName
+                        granite:class="templateAField"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="banner Name"
+                        name="./bannerName">
+                        <granite:rendercondition
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="myproject/components/myComponents/renderconditions/templatecondition"
+                            templatePath="/conf/myproject/settings/wcm/templates/landing-page-template"/>
+                    </companyName>
+                    <phoneNumber
+                        granite:class="templateAField"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Banner Phone Number"
+                        name="./bannerPhoneNumber">
+                        <granite:rendercondition
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="myproject/components/myComponents/renderconditions/templatecondition"
+                            templatePath="/conf/myproject/settings/wcm/templates/landing-page-template"/>
+                    </phoneNumber>
+                    <eMail
+                        granite:class="templateBField"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="E-Mail"
+                        name="./bannerEMail">
+                        <granite:rendercondition
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="myproject/components/myComponents/renderconditions/templatecondition"
+                            templatePath="/conf/myproject/settings/wcm/templates/content-page-template"/>
+                    </eMail>
+                    <country
+                        granite:class="templateBField"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Country List"
+                        name="./bannerCountry">
+                        <granite:rendercondition
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="myproject/components/myComponents/renderconditions/templatecondition"
+                            templatePath="/conf/myproject/settings/wcm/templates/content-page-template"/>
+                    </country>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

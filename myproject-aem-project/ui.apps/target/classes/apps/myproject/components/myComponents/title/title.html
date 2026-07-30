@@ -1,0 +1,9 @@
+<sly data-sly-test="${wcmmode.edit}">
+	<div class="cq-placeholder" data-emptyText=" please configure TITLE component"></div>
+</sly>
+
+<sly data-sly-use.model="com.myproject.aem.core.models.TitleModel">
+	<div class="title" >
+	${model.getNumber} -- ${model.getTitle} -- ${model.isCheckbox}
+	</div>
+</sly>

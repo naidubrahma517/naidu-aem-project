@@ -40,10 +40,10 @@ Object _global_clientlib = null;
 {
     Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_dynamic_wcmmode, "edit");
     if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
-        out.write("\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure Random Number component\"></div>\n");
+        out.write("\r\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure Random Number component\"></div>\r\n");
     }
 }
-out.write("\n\n\n<div class=\"body\">\n<div class=\"container\">\n        <h1>Random Number Generator</h1>\n        <div class=\"input-section\">\n            <label for=\"min\">Minimum:</label>\n            <input type=\"number\" id=\"min\"");
+out.write("\r\n\r\n\r\n<div class=\"body\">\r\n<div class=\"container\">\r\n        <h1>Random Number Generator</h1>\r\n        <div class=\"input-section\">\r\n            <label for=\"min\">Minimum:</label>\r\n            <input type=\"number\" id=\"min\"");
 {
     Object var_attrvalue1 = renderContext.getObjectModel().resolveProperty(_dynamic_properties, "minNum");
     {
@@ -64,7 +64,7 @@ out.write("\n\n\n<div class=\"body\">\n<div class=\"container\">\n        <h1>Ra
         }
     }
 }
-out.write("/>\n            <label for=\"max\">Maximum:</label>\n            <input type=\"number\" id=\"max\"");
+out.write("/>\r\n            <label for=\"max\">Maximum:</label>\r\n            <input type=\"number\" id=\"max\"");
 {
     Object var_attrvalue5 = renderContext.getObjectModel().resolveProperty(_dynamic_properties, "maxNum");
     {
@@ -85,17 +85,17 @@ out.write("/>\n            <label for=\"max\">Maximum:</label>\n            <inp
         }
     }
 }
-out.write("/>\n        </div>\n        <button id=\"generate\">");
+out.write("/>\r\n        </div>\r\n        <button id=\"generate\">");
 {
     Object var_9 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "generateBtn"), "text");
     out.write(renderContext.getObjectModel().toString(var_9));
 }
-out.write("</button>\n        <div class=\"result\">\n            <p id=\"randomNumber\">Click the button to  generate</p>\n        </div>\n        <button id=\"reset\">");
+out.write("</button>\r\n        <div class=\"result\">\r\n            <p id=\"randomNumber\">Click the button to  generate</p>\r\n        </div>\r\n        <button id=\"reset\">");
 {
     Object var_10 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(_dynamic_properties, "resetBtn"), "text");
     out.write(renderContext.getObjectModel().toString(var_10));
 }
-out.write("</button>\n</div>\n</div>\n\n");
+out.write("</button>\r\n</div>\r\n</div>\r\n\r\n");
 _global_clientlib = renderContext.call("use", "/libs/granite/sightly/templates/clientlib.html", obj());
 {
     Object var_templatevar11 = renderContext.getObjectModel().resolveProperty(_global_clientlib, "all");
@@ -107,7 +107,7 @@ _global_clientlib = renderContext.call("use", "/libs/granite/sightly/templates/c
         }
     }
 }
-out.write("\n\n");
+out.write("\r\n\r\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------

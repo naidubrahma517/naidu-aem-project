@@ -40,12 +40,12 @@ Collection var_collectionvar1_list_coerced$ = null;
 {
     Object var_testvariable0 = renderContext.getObjectModel().resolveProperty(_dynamic_wcmmode, "edit");
     if (renderContext.getObjectModel().toBoolean(var_testvariable0)) {
-        out.write("\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure Query Builder component\"></div>\n");
+        out.write("\r\n\t<div class=\"cq-placeholder\" data-emptyText=\" please configure Query Builder component\"></div>\r\n");
     }
 }
-out.write("\n<div>Query Model Component giving pages list from Civen Path</div>\n");
+out.write("\r\n<div>Query Model Component giving pages list from Civen Path</div>\r\n");
 _global_model = renderContext.call("use", com.myproject.aem.core.models.QueryBuilderModel.class.getName(), obj());
-out.write("\n\t<div class=\"QueryModel\">\n\t");
+out.write("\r\n\t<div class=\"QueryModel\">\r\n\t");
 {
     Object var_collectionvar1 = renderContext.getObjectModel().resolveProperty(_global_model, "latestPageDetails");
     {
@@ -66,7 +66,7 @@ out.write("\n\t<div class=\"QueryModel\">\n\t");
                                 {
                                     boolean var_traversal10 = (((var_index8 >= 0) && (var_index8 <= var_end6)) && true);
                                     if (var_traversal10) {
-                                        out.write("\n\n        <p>");
+                                        out.write("\r\n\r\n        <p>");
                                         {
                                             String var_11 = ((" " + renderContext.getObjectModel().toString(renderContext.call("xss", renderContext.getObjectModel().resolveProperty(pagelist, "index"), "text"))) + " . ");
                                             out.write(renderContext.getObjectModel().toString(var_11));
@@ -83,7 +83,7 @@ out.write("\n\t<div class=\"QueryModel\">\n\t");
                                             Object var_13 = renderContext.call("xss", renderContext.getObjectModel().resolveProperty(pagelist, "title"), "text");
                                             out.write(renderContext.getObjectModel().toString(var_13));
                                         }
-                                        out.write("</a> <br/> <p>\n\t");
+                                        out.write("</a> <br/> <p>\r\n\t");
                                     }
                                 }
                                 var_index8++;
@@ -96,7 +96,7 @@ out.write("\n\t<div class=\"QueryModel\">\n\t");
     }
     var_collectionvar1_list_coerced$ = null;
 }
-out.write("\t\n\t</div>\n\n");
+out.write("\t\r\n\t</div>\r\n\r\n");
 
 
 // End Of Main Template Body ----------------------------------------------------------------------
